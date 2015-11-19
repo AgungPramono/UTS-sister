@@ -32,12 +32,7 @@ type
     procedure Label1Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
-    procedure Button8Click(Sender: TObject);
-    procedure RadioButton1Click(Sender: TObject);
-    procedure Button9Click(Sender: TObject);
-    procedure Button10Click(Sender: TObject);
-    procedure Memo1Click(Sender: TObject);
-    procedure Edit1Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,12 +53,12 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-  Close;
+  Form1.Color:=clYellow;
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-  Form1.Position:=poDesktopCenter;
+  Form1.Color:=clGreen;
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
@@ -79,7 +74,7 @@ end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  WindowState:=wsMinimized;
+  Form1.Color:=clBlue;
 end;
 
 procedure TForm1.Label1Click(Sender: TObject);
@@ -99,35 +94,10 @@ begin
   AlphaBlendValue:=100;
 end;
 
-procedure TForm1.Button8Click(Sender: TObject);
+procedure TForm1.Memo1Change(Sender: TObject);
 begin
-  BorderStyle := bsNone;
-  WindowState := wsMaximized
-end;
-
-procedure TForm1.RadioButton1Click(Sender: TObject);
-begin
- RadioButton1.Font.Size:=30;
-end;
-
-procedure TForm1.Button9Click(Sender: TObject);
-begin
-   Form1.Align:=alTop;
-end;
-
-procedure TForm1.Button10Click(Sender: TObject);
-begin
-  Form1.Align:=alLeft;
-end;
-
-procedure TForm1.Memo1Click(Sender: TObject);
-begin
-  Memo1.Align:=alRight;
-end;
-
-procedure TForm1.Edit1Click(Sender: TObject);
-begin
-  Edit1.Color:=clBlue;
+  Memo1.Font.Style:=Memo1.Font.Style+[fsUnderline];
+  Memo1.Font.Style:=Memo1.Font.Style-[fsBold];
 end;
 
 end.

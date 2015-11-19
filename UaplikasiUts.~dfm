@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 192
   Top = 108
-  Width = 487
+  Width = 709
   Height = 482
   Caption = '.:: Aplikasi UTS ::.'
   Color = clBtnFace
@@ -39,14 +39,11 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 200
-    Top = 56
+    Left = 112
+    Top = 16
     Width = 75
     Height = 25
-    Caption = 'CLOSE'
-    ModalResult = 1
-    ParentShowHint = False
-    ShowHint = True
+    Caption = 'YES'
     TabOrder = 1
     OnClick = Button2Click
   end
@@ -55,7 +52,7 @@ object Form1: TForm1
     Top = 16
     Width = 75
     Height = 25
-    Caption = 'Center'
+    Caption = 'Hijau'
     TabOrder = 2
     OnClick = Button3Click
   end
@@ -64,7 +61,7 @@ object Form1: TForm1
     Top = 16
     Width = 75
     Height = 25
-    Caption = 'Minimized'
+    Caption = 'Biru'
     TabOrder = 3
     OnClick = Button4Click
   end
@@ -96,31 +93,28 @@ object Form1: TForm1
     OnClick = Button7Click
   end
   object Button8: TButton
-    Left = 112
-    Top = 16
+    Left = 200
+    Top = 56
     Width = 75
     Height = 25
-    Caption = 'FullScreen'
+    Caption = 'Button8'
     TabOrder = 7
-    OnClick = Button8Click
   end
   object Button9: TButton
     Left = 288
     Top = 56
     Width = 75
     Height = 25
-    Caption = 'Top'
+    Caption = 'Button9'
     TabOrder = 8
-    OnClick = Button9Click
   end
   object Button10: TButton
     Left = 376
     Top = 56
     Width = 75
     Height = 25
-    Caption = 'Left'
+    Caption = 'Button10'
     TabOrder = 9
-    OnClick = Button10Click
   end
   object Edit1: TEdit
     Left = 48
@@ -128,7 +122,6 @@ object Form1: TForm1
     Width = 241
     Height = 21
     TabOrder = 10
-    OnClick = Edit1Click
   end
   object Button11: TButton
     Left = 48
@@ -142,24 +135,22 @@ object Form1: TForm1
   object RadioButton1: TRadioButton
     Left = 48
     Top = 256
-    Width = 193
-    Height = 33
+    Width = 81
+    Height = 17
     Caption = 'Berubah'
     TabOrder = 12
-    OnClick = RadioButton1Click
   end
   object Memo1: TMemo
     Left = 48
-    Top = 304
-    Width = 313
-    Height = 137
+    Top = 288
+    Width = 249
+    Height = 129
     Lines.Strings = (
       'h sfhsfslfsfsbsbv ldjfdfjkdf'
       'sfhskfhsk'
       'fhsfhsk'
       'sfkskfsk')
-    ScrollBars = ssVertical
     TabOrder = 13
-    OnClick = Memo1Click
+    OnChange = Memo1Change
   end
 end
